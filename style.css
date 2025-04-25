@@ -146,7 +146,7 @@ a {
 .circle:nth-child(2) {
     background-color: rgb(228, 239, 247);
     width: 22rem;
-    background-image: url("./image/IMG_6402.jpg");
+    background-image: url("./images/IMG_6402.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
