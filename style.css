@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Catamaran:wght@100..900&family=Dosis:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.portfolio {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+
+p {
+    font-family: 'Poppins', 'sans-serif';
+    color: white;
+}
+
+.nav_c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Dosis';
+    /* background-color: #EA580C; */
+    text-transform: uppercase;
+    width: 100vw;
+    height: 10vh;
+    z-index: 100;
+    padding: 0px 30px;
+    position: fixed;
+}
+
+.nav_c ul {
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+}
+
+.nav_c ul li {
+    /* margin-left:0px; */
+    margin-right: 50px;
+    font-weight: 500;
+
+
+}
+
+span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(159, 248, 159);
+
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(251, 172, 24);
+    position: relative;
+
+}
+
+.left_container,
+.right_container {
+    display: flex;
+    align-items: center;
+}
+
+.left_container {
+    background-color: #262525;
+    height: 100vh;
+    width: 74vw;
+
+    padding-left: 2rem;
+
+}
+
+.right_container {
+
+    background-color: #3877FF;
+    height: 100vh;
+    width: 26vw;
+    background: linear-gradient(-45deg, #3877FF, #262525 63%);
+}
+
+.icons .fa-brands {
+    color: rgb(19, 165, 213);
+
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(19, 99, 196)40%, rgb(247, 164, 11));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2.0em;
+    font-size: 1.9em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.name {
+    font-size: 1.4em;
+    color: rgb(178, 225, 254);
+    font-family: Poppins, 'sans-serif';
+}
+
+.content {
+    margin-left: 2rem;
+    color: rgb(69, 242, 242);
+    font-family: Montserrat;
+    margin-right:15rem;
+}
+
+.content .details {
+    color: rgb(69, 242, 242);
+    font-size: 1.1rem;
+    font-weight: 500;
+   
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 19rem;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-45%) translateY(-50%);
+   
+}
+
+.circle:nth-child(1) {
+    background-color: violet;
+    background: linear-gradient(-90deg, #262525 50%, transparent 50%);
+    width: 28rem;
+
+}
+
+.circle:nth-child(2) {
+    background-color: rgb(228, 239, 247);
+    width: 22rem;
+    background-image: url("./image/IMG_6402.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 1rem orange, inset 0 0 1rem orange, 0 0 2.8rem #d9c4f6, inset 0 0 2.8rem #d9c4f6;
+    border: 1rem solid #ffffff;
+ 
+}
+
+.nav_li a::after {
+
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right,#262525, orange 45%,rgb(15, 191, 250) 85%);
+    width: 100%;
+    height: .11rem;
+    border-radius:45px;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .6s;
+    transform-origin: bottom right;
+}
+
+.nav_li a:hover::after ,.nav_c .active::after{
+    content: "";
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+
+}
+.nav_li a:hover, .nav_c .active::after{
+    
+    /* background-color: rgb(251, 172, 24); */
+    border-radius:10px;
+    color:#bfcff2;
+    transition:transform .5s cubic-bezier(0, 1.1, 0.8, 1.37);
+    transform-origin:center left;
+}
+.active{
+    color:#bfcff2
+}
+.text{
+    font-size:2.2em;
+    color:rgb(12, 174, 239);
+}
+.a{
+    font-size:0.8em;
+    color:rgb(69, 242, 242);
+}
+
